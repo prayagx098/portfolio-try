@@ -1,0 +1,247 @@
+::-webkit-scrollbar {
+  width: 0px;  /* Remove scrollbar */
+  background: transparent; /* Optional: Just to be sure */
+}
+
+* {
+    margin: 0;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;  /* IE 10+ */
+    font-family: 'Creepster', cursive;
+
+}
+html{
+  scroll-behavior: smooth;
+  cursor: pointer;
+}
+
+body{
+    background-color: black;
+}
+
+#content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: #f0f0f0;
+}
+#fullscreen-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+.topButtons{
+    margin-left: 30%;
+    position: fixed;
+    
+}
+
+.bn3637 {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.7rem 2rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    backface-visibility: hidden;
+    border: 0.3rem solid transparent;
+    border-radius: 3rem;
+   
+  }
+  
+  .bn36 {
+    border-color: #fff;
+    transition: transform 0.2s cubic-bezier(0.235, 0, 0.05, 0.95);
+  }
+  
+  .bn36:hover {
+    transform: perspective(1px) scale3d(1.044, 1.044, 1) translateZ(0) !important;
+  }
+
+
+  nav{
+    justify-content: center;
+    background-color: transparent;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: fixed;
+  }
+
+  nav ul{
+    display: flex;
+  }
+
+  nav ul a{
+    color: red;
+    text-decoration: none;
+    margin: 20px;
+    font-size: x-large;
+    font-weight: bolder;
+  }
+
+  nav ul li a:hover{
+    text-shadow: 2px 4px 6px black;
+    font-size:xx-large;
+  }
+
+  nav ul button {
+    background-color: #f0f0f000;
+    color: #8b0000;
+  }
+
+  video{
+    top: -10%;
+    width: 100%;
+    height: 860px;
+    object-fit: cover;
+    filter: opacity(100%);
+  }
+
+  .overlay{
+    position: absolute;
+    top: 50%;
+    left: 70%;
+  }
+
+  h1{
+    font-family: 'Creepster', cursive;
+    color: rgb(138, 0, 0);
+    font-size: 100px;
+    font-weight: 500;
+    text-shadow: 2px 4px 6px red;
+  }
+.main h2{
+  color: #fff;
+}
+  .main span{
+    color: red;
+  }
+
+#home{
+  display: flex;
+  height: 700px;
+  flex-direction: column;
+}
+
+#home::before{
+  content: "";
+  background-image: url(https://images.bauerhosting.com/legacy/empire-tmdb/films/1250/images/9cs9RuOS3A5YEh6r4opVrIGbiJy.jpg?ar=16%3A9&fit=crop&crop=top&auto=format&w=1440&q=80);
+  height: 100%;
+  background-size:cover;
+}
+
+.main{
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+  border: 2px inset black;
+  padding: 10px;
+  position: absolute;
+  height: 70px;
+  left: 70%;
+  margin-top: 200px;
+  box-shadow: 2px 4px 2px black;
+}
+
+.main:hover{
+  box-shadow: 2px 6px 4px rgb(40, 39, 39);
+  scale: 1.05;
+}
+
+
+#about_img{
+  height: 300px;
+}
+
+.pic{
+  display: flex;
+}
+.intro{
+  display: flex;
+}
+#about h3{
+  margin-top: 10px;
+}
+
+.intro p{
+  margin-top: 70px;
+  text-align: center;
+  word-spacing: 7px;
+  letter-spacing: 1px;
+}
+
+.images{
+  box-shadow: 2px 4px 6px 8px rgb(89, 0, 0);
+  margin: 55px;
+}
+
+.images img{
+  width: 300px;
+  margin-left: 45px;
+  margin-top: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.images img:hover{
+  box-shadow: 2px 4px 6px 2px red;
+  border-radius: 15px;
+  scale: 105%;
+}
+
+
+.row{
+  display: flex;
+}
+
+.box{
+  width: 400px;
+  height: 500px;
+  margin: 10px;
+  border: 4px ridge rgb(139, 130, 77);
+  background: linear-gradient(to top,rgb(166, 67, 2) 50%,rgb(200, 255, 0));
+  background-size: 100% 200%;
+  transition: all 0.6s;
+}
+
+.box:hover{
+  background-position: left bottom;
+  box-shadow: 2px 1px 12px rgb(153, 98, 98);
+}
+
+.box img{
+  height: 250px;
+  width: 360px;
+  border-radius: 200px;
+}
+
+.box p{
+  text-align: justify;
+  margin: 4px;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: #f0f0f0;
+}
+
+.box h5{
+  color: #270b0b;
+  font-size: larger;
+  text-align: center;
+}
+
+.cv{
+  background-color: #f0f0f0;
+  color: #270b0b;
+  text-decoration: none;
+  padding: 5px;
+  height: 40px;
+  margin-left:1%;
+  border-radius: 40%;
+}
